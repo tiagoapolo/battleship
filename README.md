@@ -10,12 +10,14 @@ https://github.com/tiagoapolo/battleship/assets/2777865/08a0e894-849d-4d82-82c8-
 
 ### Run tests
 
-`npm run test`
+- `npm run test`
 
 ### Run the app locally
 
-`npm run dev`
+- `npm run dev`
+
+- Access http://localhost:3000
 
 ### Build the app
 
-`npm run build`
+- `npm run build`
