@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "@/app/components/Ship/Ship.css";
 import { twMerge } from "tailwind-merge";
 
 interface SquareSizeProps extends React.HTMLAttributes<HTMLDivElement> {}

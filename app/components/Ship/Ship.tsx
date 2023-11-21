@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "@/app/components/Ship/Ship.css";
 import SquareSize from "@/app/components/SquareSize/SquareSize";
 import {
   SHIP_SIZE_2_COLOR,
