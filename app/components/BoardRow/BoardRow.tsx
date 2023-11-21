@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { shipColorOptions } from "@/app/components/Ship/Ship";
 import SquareSize from "@/app/components/SquareSize/SquareSize";
 import { HIT_COLOR, MISSED_COLOR } from "@/app/constants";
@@ -60,4 +60,5 @@ const BoardRow = ({
   );
 };
 
+export type { BoardRowProps };
 export { BoardRow };

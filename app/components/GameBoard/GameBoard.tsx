@@ -32,7 +32,7 @@ const GameBoard = () => {
     if (gameStatus === GAME_STATUS.GAME_ENDED && playerScore < enemyScore) {
       return setMessage("YOU LOSE!");
     }
-  }, [hasGameStarted, enemyScore, playerScore]);
+  }, [gameStatus, hasGameStarted, enemyScore, playerScore]);
 
   const handleClick = (colPos: number, rowPos: number) => {
     playerShot([rowPos, colPos]);
@@ -80,8 +80,8 @@ const GameBoard = () => {
               rowArr={rowArr}
               key={`col-enemy-${index}`}
               onClick={(rowPos) => handleClick(index, rowPos)}
-              hideShips
               disabled={gameStatus !== GAME_STATUS.GAME_STARTED}
+              hideShips
             />
           ))}
           <p className="text-center">Enemy Score: {enemyScore}</p>

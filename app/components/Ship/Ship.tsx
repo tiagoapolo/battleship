@@ -2,7 +2,6 @@
 import React from "react";
 import "@/app/components/Ship/Ship.css";
 import SquareSize from "@/app/components/SquareSize/SquareSize";
-import "./Ship.css";
 import {
   SHIP_SIZE_2_COLOR,
   SHIP_SIZE_3_COLOR,
@@ -42,7 +41,6 @@ const Ship = ({ size, orientation = "vertical" }: ShipProps) => {
     <div
       className={`flex ${flexOrientation} w-fit h-fit`}
       draggable
-      onClick={() => console.log("clicked")}
       onDragStart={(e) => handleDragStart(size, orientation, e)}
     >
       {mappedSize.map((_, index) => (
